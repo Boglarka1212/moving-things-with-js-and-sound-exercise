@@ -31,7 +31,7 @@ function moveDodgerLeft() {
   if (left > 0) {
     dodger.style.left = `${left - 1}px`;
   }
-}
+};
 
 document.addEventListener("keydown", function (e) {
   if (e.key === "ArrowLeft") {
@@ -48,10 +48,27 @@ function moveDodgerRight() {
   if (right < 360) {
     dodger.style.left = `${right + 1}px`;
   }
-}
+};
 
 document.addEventListener("keydown", function (e) {
   if (e.key === "ArrowRight") {
     moveDodgerRight();
   }
 });
+
+
+//knap opad
+document.addEventListener("keydown", function (e) {
+  if (e.key === "ArrowUp") {
+    moveDodgerUp();
+  }
+});
+
+function moveDodgerUp() {
+  const upNumbers = dodger.style.bottom.replace("px", "");
+  const up =parseInt(upNumbers, 10);
+
+  if (up < 380) {
+    dodger.style.bottom = `${up + 1}px`;
+  }
+};
