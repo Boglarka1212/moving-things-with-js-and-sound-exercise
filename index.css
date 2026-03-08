@@ -54,3 +54,38 @@
   position: absolute;
   width: 9px;
 }
+
+
+.food {
+  width: 10px;
+  height: 10px;
+  background-color: pink;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+#food1 {
+  bottom: 30px;
+  left: 60px;
+}
+
+#food2 {
+  bottom: 120px;
+  left: 100px;
+}
+
+#food3 {
+  bottom: 70px;
+  left: 60px;
+}
+
+#food4 {
+  bottom: 270px;
+  left: 350px;
+}
+
+#food5 {
+  bottom: 180px;
+  left: 90px;
+}
